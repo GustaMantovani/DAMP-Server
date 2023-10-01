@@ -23,5 +23,3 @@ services:
 networks:
   app-network:
     driver: bridge 
-
-#Due to the need for an interactive terminal, it is not possible to install PHP in the container using the RUN command in the Dockerfile. Therefore, please execute the following command after the containers are online: docker exec -it web-server bash -c 'apt install -y php libapache2-mod-php php-mysql && exit' && docker restart web-server
