@@ -46,8 +46,6 @@ The 'db' service is defined similarly. It's assigned a container name, 'db-serve
 
 A custom network named 'app-network' is defined in the 'networks' section with the 'bridge' driver. This network serves as the communication channel between the 'web' and 'db' containers, ensuring they can interact seamlessly.
 
-Additionally, a comment provides specific guidance due to the inability to install PHP within the 'web' container using a RUN command in its Dockerfile. Instead, it advises running a particular command (docker exec ...) after both containers are running. This command installs PHP and related packages within the 'web' container, and after the installation, the 'web' container is restarted to apply the changes.
-
 The proposal is that this environment should work by simply placing it in your working repository. You just need to bring up both containers using Docker Compose from the '.yaml' file located inside the 'docker' folder. Remember that it's important for you to make the necessary changes to tailor this environment to your project. However, the default configuration is quite comprehensive.
 
 ## Installation
