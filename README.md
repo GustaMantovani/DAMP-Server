@@ -56,7 +56,9 @@ After reading the text above, run the following commands in the terminal:
 ./install.sh
 ```
 ## Notes
--The IP address of the database server is the last thing the installation script displays on the screen, this is convenient for changing database connection functions.
+- The IP address of the database server is the last thing the installation script displays on the screen, this is convenient for changing database connection functions.
 
--The option to display php.ini errors is activated, if you want to use this environment on servers to upload applications to production (although I don't recommend this)       remember to deactivate it.
+- The installation of PHP will display some options related to locale, date, and time because the operating system where the installation is being executed does not have a local date and time server; choose according to your locale. Additionally, the installation will find the php configuration file (php.ini) that was moved there during the container orchestration, so a menu of options will also be displayed in this part; if you have made any modifications to the php.ini file in this repository before installation, choose the option to keep the file that was already in the folder previously; the php.ini file in this repository already has some changes that make the environment more easily fit most projects, so I recommend always choosing to keep the file that was moved to the container, but if you prefer the default configuration, simply choose the overwrite option.
+
+- The option to display php.ini errors is activated, if you want to use this environment on servers to upload applications to production (although I don't recommend this)       remember to deactivate it.
 
