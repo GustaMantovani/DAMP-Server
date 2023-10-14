@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:23.10
 
 RUN apt update && apt install -y supervisor apache2 htop nano net-tools 
 
