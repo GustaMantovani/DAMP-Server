@@ -1,6 +1,6 @@
 FROM ubuntu:23.10
 
-RUN apt update && apt install -y supervisor apache2 htop nano net-tools 
+RUN apt update && apt install -y supervisor apache2 htop nano net-tools php libapache2-mod-php php-mysql
 
 COPY dir.conf /etc/apache2/mods-enabled/dir.conf 
 COPY php.ini /etc/php/8.1/apache2/php.ini
