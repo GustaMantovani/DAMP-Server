@@ -55,6 +55,11 @@ After reading the text above, run the following commands in the terminal:
 ```sh
 ./install.sh
 ```
+
+## Usage
+
+You can start damp server by runnig './start.sh', and stop it with 'stop.sh', or runnig the docker commands.
+
 ## Notes
 - The IP address of the database server is the last thing the installation script displays on the screen, this is convenient for changing database connection functions.
 
